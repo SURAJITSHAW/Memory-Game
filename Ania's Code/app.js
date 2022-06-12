@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
       alert('Sorry, try again')
     }
+    console.log(cardsWon);
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
