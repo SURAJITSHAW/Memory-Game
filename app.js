@@ -62,10 +62,14 @@ function startGame() {
         img = document.createElement('img')
         img.setAttribute('src', './images/blank.png')
         img.setAttribute('data-id', index)
-        console.log(img);
-
+        img.addEventListener('click', flipCard)
         mainGrid.appendChild(img) // append img element we create to our main grid div
     }) 
 }
-
 startGame()
+
+// Callback funct for 'click' eventListener
+function flipCard() {
+    const imgId = this.getAttribute('data-id') // 'this' keyword what is allowing us to interact with element we clicked
+    console.log(cardArray[imgId].name);
+}  
