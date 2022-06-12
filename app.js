@@ -119,7 +119,7 @@ function checkMatch() {
   cardsChosenIds = [];
 
   if (cardsWon.length == cardArray.length/2) {
-    cardsWon.textContent = 'Wohoooo!!! You selected them all correctly 😍'
+    resultDisplay.textContent = 'Wohoooo!!! You selected them all correctly 😍'
     
   }
 }
